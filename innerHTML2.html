@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>manipulate DOM dynamically</title>
+    </head>
+     <!-- optimized than innerHTML.html and innerHTML1.html -->
+
+    <script>
+        function change(){
+            const heading = document.querySelector('h1'); // here 'h1' never change so we can declare as CONST
+            if(heading.innerHTML === 'Hello! World'){
+                heading.innerHTML = 'Good Bye!!';
+            }else{
+                heading.innerHTML = 'Hello! World';
+            }
+        }
+    </script>
+    <body>
+        <h1>Hello! World</h1>
+        <button onclick="change()">Click Here</button>
+    </body>
+</html>
