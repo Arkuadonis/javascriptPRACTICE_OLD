@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>manipulate DOM dynamically</title>
+        <script>
+            function change() {
+                if(document.querySelector('h1').innerHTML === 'Hello! World'){
+                    document.querySelector('h1').innerHTML= 'Good bye!!';
+                }else{
+                    document.querySelector('h1').innerHTML= 'Hello! World';
+                }
+                      
+            }
+        </script>
+    </head>
+
+    <body>
+        <h1>Hello! World</h1>
+        <button onclick="change()">Click here</button>
+    </body>
+</html>
