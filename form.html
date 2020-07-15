@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Extract value from the form</title>
+
+    <!-- //eventListener,funtion,querySelector -->
+    <script>
+        document.addEventListener('DOMContentLoaded', function(){
+
+            document.querySelector('form').onsubmit = function(){
+                const name = document.querySelector('#name').value;
+                    alert(`hello ${name}`)
+            }
+        });
+        
+
+    </script>
+
+</head>
+<body>
+    <form>
+        <input type="text" id="name" placeholder="Name" autofocus>
+        <input type="Submit">
+    </form>
+</body>
+</html>
